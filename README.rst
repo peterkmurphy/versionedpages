@@ -9,7 +9,7 @@ admins to edit and store multiple versions of the same rich text page. It
 also allows admins to view the differences between different versions.
 
 This application is a fork of `mezzanine-wiki
-<https://github.com/dfalk/mezzanine-wiki`>_, which was created by `Dmitry Falk
+<https://github.com/dfalk/mezzanine-wiki>`_, which was created by `Dmitry Falk
 <mailto:dfalk5@gmail.com>`_. However, there are differences in the goals of
 both applications:
 
