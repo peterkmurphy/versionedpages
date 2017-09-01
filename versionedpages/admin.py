@@ -9,7 +9,7 @@ class VersionPageRevisionInline(StackedDynamicInlineAdmin):
 
 
 class VersionPageAdmin(PageAdmin):
-    inlines = (WikiPageRevisionInline,)
+    inlines = (VersionPageRevisionInline,)
 
 
 admin.site.register(VersionPage, VersionPageAdmin)

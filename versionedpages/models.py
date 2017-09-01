@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 from django.db import models
 from django.contrib.auth.models import User
-from mezzanine.core.models import Slugged, TimeStamped
+from mezzanine.core.models import Slugged, TimeStamped, Ownable
 from mezzanine.pages.models import Page, RichText
+from django.utils.translation import ugettext_lazy as _, ugettext
 
 class VersionPage(Page, RichText):
     """
@@ -18,11 +19,9 @@ class VersionPageRevision(Ownable, TimeStamped):
     """
 
     page = models.ForeignKey("VersionPage", verbose_name=_("Versioned page"))
-    content = WikiTextField(_("Content"))
+    content = models.TextField(_("Content"))
     description = models.CharField(_("Description"),
                                    max_length=400, blank=True)
-    reviser = models.ForeignKey("User", verbose_name=_("Author"))
-
 
     class Meta:
         verbose_name = _("Versioned revision")
