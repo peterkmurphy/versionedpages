@@ -13,7 +13,7 @@ try:
     setup(
         name="versionedpages",
         version=0.1,
-        author="Peter Murphy,
+        author="Peter Murphy",
         author_email="peterkmurphy@gmail.com",
         description="Permits page versioning for Mezzanine CMS.",
         long_description=open("README.rst").read(),
