@@ -27,9 +27,7 @@ Quick start
 
 1. Download or clone and run:
 
-```
-python setup.py install
-```
+`python setup.py install`
 
 2. Add "versionedpages" to your INSTALLED_APPS setting like this:
 
