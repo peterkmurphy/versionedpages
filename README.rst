@@ -27,24 +27,20 @@ Quick start
 
 1. Download or clone and run:
 
-`python setup.py install`
+::
 
-```
-function test() {
-  console.log("notice the blank line before this function?");
-}
-```
+    python setup.py install
 
 2. Add "versionedpages" to your INSTALLED_APPS setting like this:
 
-```
-INSTALLED_APPS = (
-    ...
-    'reversion', # https://github.com/etianen/django-reversion
-    'reversion_compare', # https://github.com/jedie/django-reversion-compare
-    "versionedpages",
-)
-```
+::
+    INSTALLED_APPS = (
+        ...
+        'reversion', # https://github.com/etianen/django-reversion
+        'reversion_compare', # https://github.com/jedie/django-reversion-compare
+        "versionedpages",
+    )
+
 
 3. Add reversion models to admin interface:
 
