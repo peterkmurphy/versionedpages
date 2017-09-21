@@ -7,12 +7,13 @@ from setuptools import setup, find_packages
 install_requires = [
     "mezzanine >= 4.0",
     "diff-match-patch",
+    "django-reversion-compare"
 ]
 
 try:
     setup(
         name="versionedpages",
-        version=0.1,
+        version=0.2,
         author="Peter Murphy",
         author_email="peterkmurphy@gmail.com",
         description="Permits page versioning for Mezzanine CMS.",
