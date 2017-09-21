@@ -34,6 +34,7 @@ Quick start
 2. Add "versionedpages" to your INSTALLED_APPS setting like this:
 
 ::
+
     INSTALLED_APPS = (
         ...
         'reversion', # https://github.com/etianen/django-reversion
@@ -44,24 +45,24 @@ Quick start
 
 3. Add reversion models to admin interface:
 
-```
+::
+
     ADD_REVERSION_ADMIN=True
-```
 
 4. Add "versionedpages.VersionPage" to SEARCH_MODEL_CHOICES setting like this:
 
-```
+::
+
     SEARCH_MODEL_CHOICES = ('pages.Page', 'blog.BlogPost', 'versionedpages.VersionPage')
-```
 
 5. Run the following code to create and register the models:
 
-```
+::
+
     python manage.py makemigrations django-reversion
     python manage.py makemigrations versionedpages
     python manage.py migrate
     python manage.py createinitialrevisions versionedpages.VersionPage
-```
 
 6. Restart the server.
 
