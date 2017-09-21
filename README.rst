@@ -29,6 +29,12 @@ Quick start
 
 `python setup.py install`
 
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
+
 2. Add "versionedpages" to your INSTALLED_APPS setting like this:
 
 ```
