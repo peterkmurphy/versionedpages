@@ -22,7 +22,10 @@ try:
         #url="http://mezzanine.jupo.org/",
         zip_safe=False,
         include_package_data=True,
-        packages=find_packages(),
+        packages=['versionedpages'],
+        package_data={
+            'versionedpages': ['templates/*.html', 'templates/**/*.html'],
+        },
         install_requires=install_requires,
         entry_points="""
             [console_scripts]
