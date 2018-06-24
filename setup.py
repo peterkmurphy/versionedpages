@@ -13,7 +13,7 @@ install_requires = [
 try:
     setup(
         name="versionedpages",
-        version=0.2,
+        version=0.3,
         author="Peter Murphy",
         author_email="peterkmurphy@gmail.com",
         description="Permits page versioning for Mezzanine CMS.",
